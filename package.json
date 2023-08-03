@@ -1,0 +1,7 @@
+{
+  "name": "amaze-manufacturing-company",
+  "version": "0.1.0",
+  "scripts": {
+    "postcss": "concurrently 'postcss src/postcss/**/*.css --dir src/styles --watch --verbose' 'live-server src'"
+  }
+}
