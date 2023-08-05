@@ -2,6 +2,30 @@
   "name": "amaze-manufacturing-company",
   "version": "0.1.0",
   "scripts": {
-    "postcss": "concurrently 'postcss src/postcss/**/*.css --dir src/styles --watch --verbose' 'live-server src'"
+    "server": "live-server src",
+    "postcss": "postcss src/postcss/**/*.css --dir src/styles --watch --verbose",
+    "postserver": "npm-run-all --parallel postcss server"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss-import": "^15.1.0",
+    "live-server": "^1.2.2",
+    "postcss": "^8.4.27",
+    "postcss-cli": "^10.1.0",
+    "postcss-discard-comments": "^6.0.0",
+    "postcss-mixins": "^9.0.4",
+    "postcss-nested": "^6.0.1",
+    "postcss-preset-env": "^9.1.0",
+    "postcss-simple-vars": "^7.0.1",
+    "npm-run-all": "4.1.5",
+    "parallel": "1.2.0",
+    "open": "9.1.0"
+  },
+  "overrides": {
+    "chokidar": "3.5.3",
+    "uuid": "9.0.0"
   }
 }
