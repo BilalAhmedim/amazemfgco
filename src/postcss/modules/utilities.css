@@ -10,14 +10,29 @@
 }
 
 .wrapper {
-  padding: 0 1rem;
+  padding: 0 3rem;
 }
 
 p {
   font-size: 1.4rem;
-  line-height: 1.4em;
+  line-height: 1.6em;
+  text-transform: uppercase;
 }
 
 h1 {
   font-size: 3em;
+}
+
+.btn {
+  padding: 1em 2em;
+  font-family: $text-family;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: none;
+}
+
+.btn-brown {
+  color: #fff;
+  border-radius: 30px;
+  background: $brown;
 }

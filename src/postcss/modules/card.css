@@ -1,0 +1,9 @@
+.gallery-inner {
+}
+
+.gallery-card {
+  background: #000;
+  img {
+    border-radius: 5px;
+  }
+}
