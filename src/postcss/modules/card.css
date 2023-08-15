@@ -1,9 +1,33 @@
 .gallery-inner {
+  display: grid;
+  grid-template-columns: auto auto;
+  .gallery-card {
+    margin: 20px;
+  }
+}
+.gallery-featured {
+  background: $offwhite;
 }
 
 .gallery-card {
-  background: #000;
+  position: relative;
+  overflow: hidden;
+  /* background: #000; */
+  a {
+    display: block;
+    text-decoration: none;
+    color: $black;
+    font-family: $text-family;
+    font-weight: 300;
+  }
   img {
-    border-radius: 5px;
+    display: block;
+    width: 100%;
+  }
+  figcaption {
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 20px 0;
+    text-align: center;
   }
 }

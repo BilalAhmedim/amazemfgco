@@ -8,7 +8,9 @@ $text-family: "Jost";
 
 $brown: #693513;
 
-$black: #232323;
+$black: #4a4a4a;
+
+$offwhite: #f5f5f5;
 
 h1,
 h2,
@@ -23,4 +25,5 @@ h6 {
 p {
   font-family: $text-family;
   color: $black;
+  font-weight: 300;
 }
