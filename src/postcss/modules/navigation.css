@@ -1,2 +1,9 @@
+header {
+  .nav-brand {
+    img {
+      max-width: 180px;
+    }
+  }
+}
 nav {
 }

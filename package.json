@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "server": "live-server src",
-    "postcss": "postcss src/postcss/**/*.css --dir src/styles --watch --verbose",
+    "postcss": "postcss src/postcss/styles.css --dir src/styles --watch --verbose",
     "postserver": "npm-run-all --parallel postcss server"
   },
   "dependencies": {
@@ -22,7 +22,8 @@
     "postcss-simple-vars": "^7.0.1",
     "npm-run-all": "4.1.5",
     "parallel": "1.2.0",
-    "open": "9.1.0"
+    "open": "9.1.0",
+    "npm": "9.8.1"
   },
   "overrides": {
     "chokidar": "3.5.3",

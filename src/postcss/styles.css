@@ -1,5 +1,5 @@
 @import "normalize.css";
 @import "./modules/typography.css";
-@import "./modules/header.css";
 @import "./modules/utilities.css";
+@import "./modules/header.css";
 @import "./modules/navigation.css";

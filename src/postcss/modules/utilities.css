@@ -6,9 +6,18 @@
 
 .container {
   max-width: 1140px;
-  margin-left: auto;
+  margin: 0 auto;
 }
 
 .wrapper {
   padding: 0 1rem;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.4em;
+}
+
+h1 {
+  font-size: 3em;
 }

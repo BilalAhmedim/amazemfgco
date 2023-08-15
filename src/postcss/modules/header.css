@@ -12,5 +12,5 @@ h1:after {
   transform: translatex(-50%);
   width: 300px;
   height: 2px;
-  background: $brown;
+  background: var(--brown);
 }

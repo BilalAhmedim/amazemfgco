@@ -1,0 +1,22 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400&family=Julius+Sans+One&display=swap");
+--h-family:"Julius Sans One";
+--text-family:"Jost";
+--brown:#693513;
+--black:#232323;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family:var(h-family);
+  color:var(--brown);
+}
+p{
+  font-family:var(--text-family);
+  color:var(--black);
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Bvc3Rjc3MvbW9kdWxlcy90eXBvZ3JhcGh5LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQ0Esb0ZBQW9GO0FBQ3BGLDZHQUE2RztBQUU3Ryw0QkFBNkI7QUFFN0Isb0JBQXFCO0FBRXJCLGVBQWdCO0FBRWhCLGVBQWdCO0FBRWhCOzs7Ozs7RUFNRSx5QkFBMEI7RUFDMUIsa0JBQW1CO0FBQ3JCO0FBRUE7RUFDRSw4QkFBK0I7RUFDL0Isa0JBQW1CO0FBQ3JCIiwiZmlsZSI6InR5cG9ncmFwaHkuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyogRm9udHMgKi9cbkBpbXBvcnQgdXJsKFwiaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3MyP2ZhbWlseT1KdWxpdXMrU2FucytPbmUmZGlzcGxheT1zd2FwXCIpO1xuQGltcG9ydCB1cmwoXCJodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2NzczI/ZmFtaWx5PUpvc3Q6d2dodEAzMDA7NDAwJmZhbWlseT1KdWxpdXMrU2FucytPbmUmZGlzcGxheT1zd2FwXCIpO1xuXG4tLWgtZmFtaWx5OiBcIkp1bGl1cyBTYW5zIE9uZVwiO1xuXG4tLXRleHQtZmFtaWx5OiBcIkpvc3RcIjtcblxuLS1icm93bjogIzY5MzUxMztcblxuLS1ibGFjazogIzIzMjMyMztcblxuaDEsXG5oMixcbmgzLFxuaDQsXG5oNSxcbmg2IHtcbiAgZm9udC1mYW1pbHk6IHZhcihoLWZhbWlseSk7XG4gIGNvbG9yOiB2YXIoLS1icm93bik7XG59XG5cbnAge1xuICBmb250LWZhbWlseTogdmFyKC0tdGV4dC1mYW1pbHkpO1xuICBjb2xvcjogdmFyKC0tYmxhY2spO1xufVxuIl19 */
