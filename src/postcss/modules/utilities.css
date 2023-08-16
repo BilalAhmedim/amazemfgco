@@ -24,11 +24,15 @@ h1 {
 }
 
 .btn {
-  padding: 1em 2em;
+  padding: 1em 2.5em;
   font-family: $text-family;
   font-size: 1.2em;
   font-weight: bold;
   border: none;
+  cursor: pointer;
+  &:hover {
+    background: rgb(104, 67, 43);
+  }
 }
 
 .btn-brown {
