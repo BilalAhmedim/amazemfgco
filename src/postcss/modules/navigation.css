@@ -46,6 +46,7 @@ header {
   .hb {
     width: 64px;
     stroke: $brown;
+    z-index: 1;
   }
 }
 
@@ -57,7 +58,10 @@ nav {
   right: -230px;
   width: 200px;
   height: 100%;
-  transition: left 0.3s ease-in-out;
+  transition: right 0.3s ease-in-out;
+  &.open {
+    right: 0;
+  }
   ul {
     padding: 0;
     margin: 0;
