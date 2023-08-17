@@ -1,9 +1,81 @@
+body {
+  overflow-x: hidden;
+}
 header {
   .nav-brand {
+    text-align: center;
+    background: teal;
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-around;
+    align-items: center;
     img {
-      max-width: 180px;
+      width: 200px;
+      display: block;
     }
   }
+  /* .toggle {
+    background: $brown;
+    width: 32px;
+    height: 2px;
+    position: relative;
+    border-radius: 2px;
+    cursor: pointer;
+    line-height: 2rem;
+    &:after {
+      content: "";
+      position: absolute;
+      top: -10px;
+      width: 32px;
+      height: 2px;
+      background: $brown;
+      left: 0;
+      border-radius: 2px;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      width: 32px;
+      height: 2px;
+      background: $brown;
+      left: 0;
+      border-radius: 2px;
+    }
+  } */
+  .hb {
+    width: 64px;
+    stroke: $brown;
+  }
 }
+
 nav {
+  background: #ccc;
+  padding: 15px 20px 15px 10px;
+  position: fixed;
+  top: 0;
+  right: -230px;
+  width: 200px;
+  height: 100%;
+  transition: left 0.3s ease-in-out;
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    li {
+      text-transform: uppercase;
+      a {
+        text-decoration: none;
+        display: block;
+        padding: 5px 10px;
+        color: $black;
+        font-family: jost;
+        font-weight: 300;
+        &.active {
+          font-weight: 400;
+        }
+      }
+    }
+  }
 }
