@@ -43,24 +43,49 @@ header {
       border-radius: 2px;
     }
   } */
+  /* Model and toggle button */
   .hb {
     width: 64px;
     stroke: $brown;
+    z-index: 3;
+  }
+  .model {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    right: 100%;
     z-index: 1;
+    /* transform: scale(0); */
+    transition: right 300ms ease-in-out;
+    &.open {
+      transform: scale(1);
+      right: 0;
+    }
   }
 }
 
+/* Side Drawer and menu items */
 nav {
   background: #ccc;
   padding: 15px 20px 15px 10px;
+  padding-top: 64px;
   position: fixed;
   top: 0;
   right: -230px;
   width: 200px;
   height: 100%;
+  z-index: 2;
   transition: right 0.3s ease-in-out;
   &.open {
     right: 0;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
   }
   ul {
     padding: 0;
@@ -69,6 +94,13 @@ nav {
 
     li {
       text-transform: uppercase;
+      transition: background 300ms;
+      &:hover {
+        background: $offwhite;
+      }
+      &:hover a.active:after {
+        width: 4px;
+      }
       a {
         text-decoration: none;
         display: block;
@@ -78,6 +110,18 @@ nav {
         font-weight: 300;
         &.active {
           font-weight: 400;
+          position: relative;
+          &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: $brown;
+            transition: width 300ms;
+            backface-visibility: hidden;
+          }
         }
       }
     }
