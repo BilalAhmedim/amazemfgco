@@ -4,7 +4,7 @@ body {
 header {
   .nav-brand {
     text-align: center;
-    background: teal;
+    background: $offwhite;
     display: flex;
     /* justify-content: center; */
     justify-content: space-around;
@@ -50,17 +50,15 @@ header {
     z-index: 3;
   }
   .model {
-    width: 100vw;
-    height: 100vh;
+    width: 110vw;
+    height: 110vh;
     background: rgba(0, 0, 0, 0.8);
     position: fixed;
     top: 0;
     right: 100%;
     z-index: 1;
-    /* transform: scale(0); */
     transition: right 300ms ease-in-out;
     &.open {
-      transform: scale(1);
       right: 0;
     }
   }
@@ -68,9 +66,8 @@ header {
 
 /* Side Drawer and menu items */
 nav {
-  background: #ccc;
-  padding: 15px 20px 15px 10px;
-  padding-top: 64px;
+  background: $offwhite;
+  padding: 74px 20px 0 15px;
   position: fixed;
   top: 0;
   right: -230px;
@@ -94,20 +91,21 @@ nav {
 
     li {
       text-transform: uppercase;
-      transition: background 300ms;
-      &:hover {
-        background: $offwhite;
-      }
       &:hover a.active:after {
         width: 4px;
       }
       a {
         text-decoration: none;
         display: block;
-        padding: 5px 10px;
+        padding: 10px 15px;
         color: $black;
         font-family: jost;
         font-weight: 300;
+        transition: background 300ms;
+        &:hover {
+          background: $brown;
+          color: $offwhite;
+        }
         &.active {
           font-weight: 400;
           position: relative;
