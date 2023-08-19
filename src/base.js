@@ -21,8 +21,12 @@ parentItems.forEach(item => {
   const sub_menu = item.nextElementSibling;
   item.addEventListener('click', (e) => {
     e.preventDefault();
+    const isOpen = sub_menu.classList.contains('open');
     closeAllSubmenus();
-    sub_menu.classList.toggle('open');
+    if (!isOpen) {
+      sub_menu.classList.add('open'); // Open if it was closed
+    }
+
   });
 });
 
