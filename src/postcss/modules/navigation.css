@@ -97,4 +97,11 @@ ul {
       }
     }
   }
+
+  .sub-menu.open {
+    transform: scaley(0);
+    ttransform-orogin: 0 0;
+    overflow: hidden;
+    /* height: 0; */
+  }
 }
