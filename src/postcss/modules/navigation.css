@@ -14,35 +14,7 @@ header {
       display: block;
     }
   }
-  /* .toggle {
-    background: $brown;
-    width: 32px;
-    height: 2px;
-    position: relative;
-    border-radius: 2px;
-    cursor: pointer;
-    line-height: 2rem;
-    &:after {
-      content: "";
-      position: absolute;
-      top: -10px;
-      width: 32px;
-      height: 2px;
-      background: $brown;
-      left: 0;
-      border-radius: 2px;
-    }
-    &:before {
-      content: "";
-      position: absolute;
-      bottom: -10px;
-      width: 32px;
-      height: 2px;
-      background: $brown;
-      left: 0;
-      border-radius: 2px;
-    }
-  } */
+
   /* Model and toggle button */
   .hb {
     width: 64px;
@@ -84,42 +56,43 @@ nav {
       right: 0;
     }
   }
-  ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+}
 
-    li {
-      text-transform: uppercase;
-      &:hover a.active:after {
-        width: 4px;
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  li {
+    text-transform: uppercase;
+    &:hover a.active:after {
+      width: 4px;
+    }
+    a {
+      text-decoration: none;
+      display: block;
+      padding: 10px 15px;
+      color: $black;
+      font-family: jost;
+      font-weight: 300;
+      transition: background 300ms;
+      &:hover {
+        background: $brown;
+        color: $offwhite;
       }
-      a {
-        text-decoration: none;
-        display: block;
-        padding: 10px 15px;
-        color: $black;
-        font-family: jost;
-        font-weight: 300;
-        transition: background 300ms;
-        &:hover {
+      &.active {
+        font-weight: 400;
+        position: relative;
+        &:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 3px;
+          height: 100%;
           background: $brown;
-          color: $offwhite;
-        }
-        &.active {
-          font-weight: 400;
-          position: relative;
-          &:after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 3px;
-            height: 100%;
-            background: $brown;
-            transition: width 300ms;
-            backface-visibility: hidden;
-          }
+          transition: width 300ms;
+          backface-visibility: hidden;
         }
       }
     }
