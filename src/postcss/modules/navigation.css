@@ -80,6 +80,9 @@ ul {
         background: $brown;
         color: $offwhite;
       }
+      &:hover .arrow {
+        border-color: $offwhite;
+      }
       &.active {
         font-weight: 400;
         position: relative;
@@ -97,11 +100,27 @@ ul {
       }
     }
   }
-
-  .sub-menu.open {
-    transform: scaley(0);
-    ttransform-orogin: 0 0;
+  .sub-menu {
     overflow: hidden;
-    /* height: 0; */
+    transform: scaly(0);
+    transform-origin: center left;
+    max-height: 0;
+    transition: all 300ms;
+    &.open {
+      transform: scaly(1);
+      max-height: 200px;
+    }
   }
+}
+
+.arrow {
+  border: solid $black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 10px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
