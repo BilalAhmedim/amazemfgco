@@ -1,3 +1,13 @@
+$h-family: "Julius Sans One";
+
+$text-family: "Jost";
+
+$brown: #693513;
+
+$black: #4a4a4a;
+
+$offwhite: #f5f5f5;
+
 .clearfix:after {
   content: "";
   clear: both;

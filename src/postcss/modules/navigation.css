@@ -108,7 +108,7 @@ ul {
     transition: all 300ms;
     &.open {
       transform: scaly(1);
-      max-height: 200px;
+      max-height: 250px;
     }
   }
 }
