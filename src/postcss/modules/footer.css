@@ -1,7 +1,7 @@
 footer {
   background: $brown;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
   row-gap: 60px;
   justify-content: space-evenly;
   padding: 60px 0;
@@ -13,25 +13,25 @@ footer {
     li {
       list-style: none;
       overflow: hidden;
-      h2 {
+      h3 {
         color: $offwhite;
       }
       a {
         display: block;
         color: $offwhite;
         text-decoration: none;
-        font-size: 1.4rem;
+        font-size: 1rem;
         padding: 5px 10px;
         font-family: $text-family;
         background-size: cover;
       }
     }
     img.icon {
-      width: 64px;
-      height: 64px;
+      width: 32px;
+      height: 32px;
       display: inline-block;
       background-size: cover;
-      margin-right: 10px;
+      margin-right: 5px;
     }
     &.social {
       flex-direction: row;

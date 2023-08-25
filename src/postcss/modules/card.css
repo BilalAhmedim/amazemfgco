@@ -1,6 +1,6 @@
 .gallery-inner {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
   .gallery-card {
     margin: 20px;
   }
