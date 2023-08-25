@@ -16,7 +16,7 @@ header {
   .hb {
     width: 64px;
     stroke: $brown;
-    z-index: 3;
+    z-index: 17;
   }
   .model {
     width: 110vw;
