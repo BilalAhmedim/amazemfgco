@@ -1,10 +1,21 @@
 footer {
   background: $brown;
-  display: grid;
-  grid-template-columns: auto;
-  row-gap: 60px;
-  justify-content: space-evenly;
-  padding: 60px 0;
+  .footer {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 60px;
+    justify-content: space-between;
+    padding: 60px 0;
+    @mixin lg-mobile {
+      grid-template-columns: auto auto;
+    }
+    @mixin tab {
+      grid-template-columns: auto auto auto;
+    }
+    @mixin sm-desktop {
+      grid-template-columns: auto auto auto auto;
+    }
+  }
   ul {
     display: flex;
     flex-direction: column;
@@ -32,6 +43,10 @@ footer {
       display: inline-block;
       background-size: cover;
       margin-right: 5px;
+      @mixin sm-desktop {
+        width: 64px;
+        height: 64px;
+      }
     }
     &.social {
       flex-direction: row;
