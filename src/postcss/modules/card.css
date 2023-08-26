@@ -1,6 +1,19 @@
 .gallery-inner {
   display: grid;
   grid-template-columns: auto;
+  @mixin lg-mobile {
+    grid-template-columns: auto auto;
+  }
+  @mixin tab {
+    grid-template-columns: auto auto auto;
+  }
+  @mixin sm-desktop {
+    grid-template-columns: auto auto auto auto;
+  }
+  @mixin lg-desktop {
+    grid-template-columns: auto auto auto auto auto;
+  }
+
   .gallery-card {
     margin: 20px;
   }
