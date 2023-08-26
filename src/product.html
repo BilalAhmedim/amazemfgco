@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Home - Amaze Manufacturing Company</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav-brand">
+        <a href="#"
+          ><img src="./static/logo.png" alt="Amaze Manufacturing Company Logo"
+        /></a>
+        <svg
+          class="hb"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 10 10"
+          stroke=""
+          stroke-width=".3"
+          fill="rgba(0,0,0,0)"
+          stroke-linecap="round"
+          style="cursor: pointer"
+        >
+          <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+            <animate
+              dur="0.2s"
+              attributeName="d"
+              values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7"
+              fill="freeze"
+              begin="start.begin"
+            />
+            <animate
+              dur="0.2s"
+              attributeName="d"
+              values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7"
+              fill="freeze"
+              begin="reverse.begin"
+            />
+          </path>
+          <rect width="10" height="10" stroke="none">
+            <animate
+              dur="2s"
+              id="reverse"
+              attributeName="width"
+              begin="click"
+            />
+          </rect>
+          <rect width="10" height="10" stroke="none">
+            <animate
+              dur="0.001s"
+              id="start"
+              attributeName="width"
+              values="10;0"
+              fill="freeze"
+              begin="click"
+            />
+            <animate
+              dur="0.001s"
+              attributeName="width"
+              values="0;10"
+              fill="freeze"
+              begin="reverse.begin"
+            />
+          </rect>
+        </svg>
+      </div>
+      <div class="model">&nbsp;</div>
+      <nav class="nav-nav">
+        <ul class="main-menu">
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">Baths</a></li>
+          <li><a href="#">Sinks</a></li>
+          <li>
+            <a href="#" class="has-submenu">Hoods<i class="arrow down"></i></a>
+            <ul class="sub-menu">
+              <li><a href="#">Product 1</a></li>
+              <li><a href="#">Product 1</a></li>
+              <li><a href="#">Product 1</a></li>
+              <li><a href="#">Product 1</a></li>
+              <li><a href="#">Product 1</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="has-submenu">Others<i class="arrow down"></i></a>
+            <ul class="sub-menu">
+              <li><a href="#">Product 1</a></li>
+              <li><a href="#">Product 1</a></li>
+              <li><a href="#">Product 1</a></li>
+              <li><a href="#">Product 1</a></li>
+              <li><a href="#">Product 1</a></li>
+            </ul>
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <footer>
+      <ul>
+        <li><h3>Primary Pages</h3></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Conatact</a></li>
+      </ul>
+
+      <ul>
+        <li><h3>Featured Products</h3></li>
+        <li><a href="#">Baths</a></li>
+        <li><a href="#">Sinks</a></li>
+        <li><a href="#">Hoods</a></li>
+      </ul>
+
+      <ul>
+        <li><h3>Products</h3></li>
+        <li><a href="#">Baths</a></li>
+        <li><a href="#">Sinks</a></li>
+        <li><a href="#">Others</a></li>
+      </ul>
+
+      <ul class="social">
+        <li>
+          <a href="https://www.linkedin.com/in/abdullah-parvez-2b80a31a0"
+            ><img width="64px" src="/static/lin.png" class="icon"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com/profile.php?id=100086518425003&mibextid=ZbWKwL"
+            ><img width="64px" src="/static/fb.png" class="icon"
+          /></a>
+        </li>
+        <li>
+          <a href="https://instagram.com/amazemfgco?igshid=MzNlNGNkZWQ4Mg=="
+            ><img width="64px" src="/static/insta.png" class="icon"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+    <script src="./base.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -8,6 +8,31 @@ $black: #4a4a4a;
 
 $offwhite: #f5f5f5;
 
+@define-mixin lg-mobile {
+  @media (min-width: 768px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin tab {
+  @media (min-width: 992px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin sm-desktop {
+  @media (min-width: 1200px) {
+    @mixin-content;
+  }
+}
+
+@mixin tab {
+  .hide-md {
+    display: none;
+    overflow: hidden;
+  }
+}
+
 html,
 body {
   width: 100vw;
