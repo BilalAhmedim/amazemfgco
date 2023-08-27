@@ -1,5 +1,6 @@
 footer {
   background: $brown;
+  padding: 30px 0 60px 10px;
   .footer {
     display: grid;
     grid-template-columns: auto;
@@ -15,6 +16,9 @@ footer {
     @mixin sm-desktop {
       grid-template-columns: auto auto auto auto;
     }
+  }
+  @mixin tab {
+    padding: 60px 0;
   }
   ul {
     display: flex;
