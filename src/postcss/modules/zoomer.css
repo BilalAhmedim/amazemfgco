@@ -1,7 +1,7 @@
 .slider {
   margin-bottom: 95px;
 }
-.carousel {
+.slider__carousel {
   position: relative;
   height: 500px;
   width: 80%;
