@@ -2,9 +2,16 @@
   margin-bottom: 95px;
   display: grid;
   grid-template-columns: auto;
+  @mixin sm-desktop {
+    grid-template-columns: 50% auto;
+  }
 }
 .slider-details {
   padding-top: 125px;
+  @mixin sm-desktop {
+    padding-top: 80px;
+    padding-left: 60px;
+  }
 }
 .slider__carousel {
   position: relative;
