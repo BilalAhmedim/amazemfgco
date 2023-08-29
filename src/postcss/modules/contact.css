@@ -1,0 +1,66 @@
+.contact-us {
+  display: grid;
+  grid-template-columns: auto;
+  @mixin sm-desktop {
+    grid-template-columns: 50% auto;
+  }
+  .map-container {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    .map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .form {
+    padding: 10px;
+    padding-top: 60px;
+    background: $offwhite;
+    label,
+    input {
+      display: block;
+    }
+    legend {
+      font-family: $h-family;
+      font-size: 2rem;
+      color: $brown;
+      text-align: center;
+    }
+    label {
+      padding-top: 15px;
+      color: $brown;
+      font-family: $text-family;
+      font-size: 1.2rem;
+      width: 260px;
+      height: 34px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    input {
+      width: 260px;
+      height: 34px;
+      margin: 0 auto;
+      border: 1px solid $brown;
+    }
+    textarea {
+      width: 260px;
+      height: 90px;
+      border: 1px solid $brown;
+      margin: 0 auto;
+      display: block;
+      padding: 5px;
+    }
+    input[type="submit"] {
+      margin-top: 15px;
+      background: $brown;
+      color: $offwhite;
+      font-weight: 500;
+    }
+  }
+}
