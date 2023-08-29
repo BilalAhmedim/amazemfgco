@@ -21,6 +21,7 @@
   .form {
     padding: 10px;
     padding-top: 60px;
+    padding-bottom: 60px;
     background: $offwhite;
     label,
     input {
