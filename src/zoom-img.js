@@ -78,10 +78,10 @@ dotNav.addEventListener('click', dotSlide);
 
 const image = document.querySelector('.carousel__images'),
   imageContainer = document.querySelectorAll('.carousel__images');
-
 const srcSet = e => {
   const src = e.getAttribute("data-image-src");
   e.style.backgroundImage = `url(${src})`;
+  e.style.backgroundPosition = `center`;
 }
 imageContainer.forEach(srcSet);
 
