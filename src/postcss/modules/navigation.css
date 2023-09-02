@@ -2,9 +2,9 @@ header.nav-header {
   background: $offwhite;
   .nav-brand {
     text-align: center;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
     img {
       width: 200px;
       display: block;
@@ -47,6 +47,10 @@ nav {
   height: 100%;
   z-index: 16;
   transition: right 0.3s ease-in-out;
+  @media (orientation: landscape) {
+    position: absolute;
+    height: calc(100% + 450px);
+  }
 
   &.open {
     right: 0;
@@ -154,4 +158,12 @@ ul {
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+}
+
+a.contact-link {
+  position: absolute;
+  bottom: 20px;
+  font-size: 1rem;
+  color: $brown;
+  text-decoration: underline;
 }
