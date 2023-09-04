@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  amc-db:
+    image: "mysql:latest"
+    environment:
+      MYSQL_DATABASE: amc-db
+      MYSQL_USER: amc-dbu
+      MYSQL_PASSWORD: amc-dbp
+      MYSQL_RANDOM_ROOT_PASSWORD: "1"
+    volumes:
+      - ./src/db:/var/lib/mysql
+
+  amc-wp:
+    image: "wordpress"
+    ports:
+      - 8080:80
+    environment:
+      WORDPRESS_DB_HOST: amc-db
+      WORDPRESS_DB_USER: amc-dbu
+      WORDPRESS_DB_PASSWORD: amc-dbp
+      WORDPRESS_DB_NAME: amc-db
+    volumes:
+      - ./src:/var/www/html/wp-content/themes/amc
+    depends_on:
+      - amc-db
+
+volumes:
+  db:
