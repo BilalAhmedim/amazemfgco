@@ -4,7 +4,7 @@
         <li>
           <h3>Primary Pages</h3>
         </li>
-        <li><a href="#">Home</a></li>
+        <li><a href="<?php echo home_url();?>">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Conatact</a></li>
       </ul>

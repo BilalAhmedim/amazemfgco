@@ -19,7 +19,7 @@
   <header class="nav-header">
     <div class="container">
       <div class="nav-brand">
-        <a href="./"><img src="<?php echo get_template_directory_uri() ;?>/static/logo.png" alt="Amaze Manufacturing Company Logo" /></a>
+        <a href="<?php echo home_url();?>"><img src="<?php echo get_template_directory_uri() ;?>/static/logo.png" alt="Amaze Manufacturing Company Logo" /></a>
         <svg class="hb hide-md" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="" stroke-width=".3"
           fill="rgba(0,0,0,0)" stroke-linecap="round" style="cursor: pointer">
           <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
@@ -42,31 +42,23 @@
       <div class="model hide-md">&nbsp;</div>
       <nav class="nav-nav">
         <ul class="main-menu clearfix">
-          <li><a class="active" href="./">Home</a></li>
-          <li><a href="./gallery.html">Baths</a></li>
-          <li><a href="./gallery.html">Sinks</a></li>
-          <li>
-            <a href="javascript:void(0)" class="has-submenu">Hoods<i class="arrow down"></i></a>
-            <ul class="sub-menu">
-              <li><a href="./gallery.html">Product 1</a></li>
-              <li><a href="./gallery.html">Product 1</a></li>
-              <li><a href="./gallery.html">Product 1</a></li>
-              <li><a href="./gallery.html">Product 1</a></li>
-              <li><a href="./gallery.html">Product 1</a></li>
-            </ul>
-          </li>
+          <li><a class="active" href="<?php echo home_url();?>">Home</a></li>
+          <li><a href="copper-bathstubs">Copper Bathstubs</a></li>
+          <li><a href="ss-bathtubs">SS Bathstubs</a></li>
+          <li><a href="copper-kitchen-sinks">Copper Kitchen Sinks</a></li>
+          <li><a href="basin">Basin</a></li>
           <li>
             <a href="javascript:void(0)" class="has-submenu">Others<i class="arrow down"></i></a>
             <ul class="sub-menu">
-              <li><a href="./gallery.html">Product 1</a></li>
-              <li><a href="./gallery.html">Product 1</a></li>
-              <li><a href="./gallery.html">Product 1</a></li>
-              <li><a href="./gallery.html">Product 1</a></li>
-              <li><a href="./gallery.html">Product 1</a></li>
+              <li><a href="/hoods/product">Product 1</a></li>
+              <li><a href="/hoods/product">Product 1</a></li>
+              <li><a href="/hoods/product">Product 1</a></li>
+              <li><a href="/hoods/product">Product 1</a></li>
+              <li><a href="/hoods/product">Product 1</a></li>
             </ul>
           </li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="contact">Contact</a></li>
         </ul>
         <a class="contact-link hide-md" href="mailto:info@amazemfgco.com">info@amazemfgco.com</a>
       </nav>
