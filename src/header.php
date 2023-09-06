@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <?php wp_head();?>
   <title>Home - Amaze Manufacturing Company</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri() ;?>/static/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri() ;?>/static/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri() ;?>/static/favicon/favicon-16x16.png">
-  <link rel="manifest" href="<?php echo get_template_directory_uri() ;?>/static/favicon/site.webmanifest">
-  <link rel="mask-icon" href="<?php echo get_template_directory_uri() ;?>/static/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/static/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/static/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri(); ?>/static/favicon/favicon-16x16.png">
+  <link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/static/favicon/site.webmanifest">
+  <link rel="mask-icon" href="<?php echo get_template_directory_uri(); ?>/static/favicon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 </head>
@@ -19,7 +19,7 @@
   <header class="nav-header">
     <div class="container">
       <div class="nav-brand">
-        <a href="<?php echo home_url();?>"><img src="<?php echo get_template_directory_uri() ;?>/static/logo.png" alt="Amaze Manufacturing Company Logo" /></a>
+        <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/static/logo.png" alt="Amaze Manufacturing Company Logo" /></a>
         <svg class="hb hide-md" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="" stroke-width=".3"
           fill="rgba(0,0,0,0)" stroke-linecap="round" style="cursor: pointer">
           <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
@@ -42,7 +42,7 @@
       <div class="model hide-md">&nbsp;</div>
       <nav class="nav-nav">
         <ul class="main-menu clearfix">
-          <li><a class="active" href="<?php echo home_url();?>">Home</a></li>
+          <li><a class="active" href="<?php echo home_url(); ?>">Home</a></li>
           <li><a href="copper-bathstubs">Copper Bathstubs</a></li>
           <li><a href="ss-bathtubs">SS Bathstubs</a></li>
           <li><a href="copper-kitchen-sinks">Copper Kitchen Sinks</a></li>

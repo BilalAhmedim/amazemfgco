@@ -12,34 +12,34 @@
 
           <ul class="carousel__track">
             <li class="carousel-slide current-slide">
-              <div class="carousel__images" data-image-src="<?php echo get_template_directory_uri() ;?>/static/1.jpg" alt="{{product.name}}"></div>
+              <div class="carousel__images" data-image-src="<?php echo get_template_directory_uri(); ?>/static/1.jpg" alt="{{product.name}}"></div>
             </li>
             <li class="carousel-slide">
-              <div class="carousel__images" data-image-src="<?php echo get_template_directory_uri() ;?>/static/5.jpg" alt="{{product.name}}"></div>
+              <div class="carousel__images" data-image-src="<?php echo get_template_directory_uri(); ?>/static/5.jpg" alt="{{product.name}}"></div>
             </li>
             <li class="carousel-slide">
-              <div class="carousel__images" data-image-src="<?php echo get_template_directory_uri() ;?>/static/6.jpg" alt="{{product.name}}"></div>
+              <div class="carousel__images" data-image-src="<?php echo get_template_directory_uri(); ?>/static/6.jpg" alt="{{product.name}}"></div>
             </li>
             <li class="carousel-slide">
-              <div class="carousel__images" data-image-src="<?php echo get_template_directory_uri() ;?>/static/7.jpg" alt="{{product.name}}"></div>
+              <div class="carousel__images" data-image-src="<?php echo get_template_directory_uri(); ?>/static/7.jpg" alt="{{product.name}}"></div>
             </li>
           </ul>
 
         </div>
 
         <button class="carousel__button carousel__button--left">
-          <img src="<?php echo get_template_directory_uri() ;?>/static/previous.svg" alt="Previous">
+          <img src="<?php echo get_template_directory_uri(); ?>/static/previous.svg" alt="Previous">
         </button>
 
         <button class="carousel__button carousel__button--right">
-          <img src="<?php echo get_template_directory_uri() ;?>/static/next.svg" alt="Next">
+          <img src="<?php echo get_template_directory_uri(); ?>/static/next.svg" alt="Next">
         </button>
 
         <div class="carousel__nav">
-          <img class="carousel__indicator current-slide" src="<?php echo get_template_directory_uri() ;?>/static/1.jpg" />
-          <img class="carousel__indicator" src="<?php echo get_template_directory_uri() ;?>/static/5.jpg" />
-          <img class="carousel__indicator" src="<?php echo get_template_directory_uri() ;?>/static/6.jpg" />
-          <img class="carousel__indicator" src="<?php echo get_template_directory_uri() ;?>/static/7.jpg" />
+          <img class="carousel__indicator current-slide" src="<?php echo get_template_directory_uri(); ?>/static/1.jpg" />
+          <img class="carousel__indicator" src="<?php echo get_template_directory_uri(); ?>/static/5.jpg" />
+          <img class="carousel__indicator" src="<?php echo get_template_directory_uri(); ?>/static/6.jpg" />
+          <img class="carousel__indicator" src="<?php echo get_template_directory_uri(); ?>/static/7.jpg" />
 
         </div>
 

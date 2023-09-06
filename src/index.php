@@ -1,4 +1,4 @@
-<?php get_header();?>
+<!-- <?php get_header();?>
   <section class="slider-main p0">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -8,13 +8,13 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="<?php echo get_template_directory_uri() ;?>/static/1.jpg" class="d-block w-100" alt="..." />
+          <img src="<?php echo get_template_directory_uri(); ?>/static/1.jpg" class="d-block w-100" alt="..." />
         </div>
         <div class="carousel-item">
-          <img src="<?php echo get_template_directory_uri() ;?>/static/2.jpg" class="d-block w-100" alt="..." />
+          <img src="<?php echo get_template_directory_uri(); ?>/static/2.jpg" class="d-block w-100" alt="..." />
         </div>
         <div class="carousel-item">
-          <img src="<?php echo get_template_directory_uri() ;?>/static/3.jpg" class="d-block w-100" alt="..." />
+          <img src="<?php echo get_template_directory_uri(); ?>/static/3.jpg" class="d-block w-100" alt="..." />
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -65,28 +65,28 @@
       <div class="gallery-inner">
         <figure class="gallery-card">
           <a href="./gallery.html">
-            <img src="<?php echo get_template_directory_uri() ;?>/static/image.jpg" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/static/image.jpg" alt="" />
             <figcaption>Product N</figcaption>
           </a>
         </figure>
 
         <figure class="gallery-card">
           <a href="./gallery.html">
-            <img src="<?php echo get_template_directory_uri() ;?>/static/image.jpg" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/static/image.jpg" alt="" />
             <figcaption>Product N</figcaption>
           </a>
         </figure>
 
         <figure class="gallery-card">
           <a href="./gallery.html">
-            <img src="<?php echo get_template_directory_uri() ;?>/static/image.jpg" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/static/image.jpg" alt="" />
             <figcaption>Product N</figcaption>
           </a>
         </figure>
 
         <figure class="gallery-card">
           <a href="./gallery.html">
-            <img src="<?php echo get_template_directory_uri() ;?>/static/image.jpg" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/static/image.jpg" alt="" />
             <figcaption>Product N</figcaption>
           </a>
         </figure>
@@ -104,70 +104,70 @@
 
         <figure class="gallery-card">
           <a href="./gallery.html">
-            <img src="<?php echo get_template_directory_uri() ;?>/static/image.jpg" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/static/image.jpg" alt="" />
             <figcaption>Product N</figcaption>
           </a>
         </figure>
 
         <figure class="gallery-card">
           <a href="./gallery.html">
-            <img src="<?php echo get_template_directory_uri() ;?>/static/image.jpg" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/static/image.jpg" alt="" />
             <figcaption>Product N</figcaption>
           </a>
         </figure>
 
         <figure class="gallery-card">
           <a href="./gallery.html">
-            <img src="<?php echo get_template_directory_uri() ;?>/static/image.jpg" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/static/image.jpg" alt="" />
             <figcaption>Product N</figcaption>
           </a>
         </figure>
 
         <figure class="gallery-card">
           <a href="./gallery.html">
-            <img src="<?php echo get_template_directory_uri() ;?>/static/image.jpg" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/static/image.jpg" alt="" />
             <figcaption>Product N</figcaption>
           </a>
         </figure>
 
         <figure class="gallery-card">
           <a href="./gallery.html">
-            <img src="<?php echo get_template_directory_uri() ;?>/static/image.jpg" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/static/image.jpg" alt="" />
             <figcaption>Product N</figcaption>
           </a>
         </figure>
 
         <figure class="gallery-card">
           <a href="./gallery.html">
-            <img src="<?php echo get_template_directory_uri() ;?>/static/image.jpg" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/static/image.jpg" alt="" />
             <figcaption>Product N</figcaption>
           </a>
         </figure>
 
         <figure class="gallery-card">
           <a href="./gallery.html">
-            <img src="<?php echo get_template_directory_uri() ;?>/static/image.jpg" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/static/image.jpg" alt="" />
             <figcaption>Product N</figcaption>
           </a>
         </figure>
 
         <figure class="gallery-card">
           <a href="./gallery.html">
-            <img src="<?php echo get_template_directory_uri() ;?>/static/image.jpg" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/static/image.jpg" alt="" />
             <figcaption>Product N</figcaption>
           </a>
         </figure>
 
         <figure class="gallery-card">
           <a href="./gallery.html">
-            <img src="<?php echo get_template_directory_uri() ;?>/static/image.jpg" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/static/image.jpg" alt="" />
             <figcaption>Product N</figcaption>
           </a>
         </figure>
 
         <figure class="gallery-card">
           <a href="./gallery.html">
-            <img src="<?php echo get_template_directory_uri() ;?>/static/image.jpg" alt="" />
+            <img src="<?php echo get_template_directory_uri(); ?>/static/image.jpg" alt="" />
             <figcaption>Product N</figcaption>
           </a>
         </figure>
@@ -175,4 +175,4 @@
     </div>
   </section>
 
-  <?php get_footer();?>
+  <?php get_footer();?> -->

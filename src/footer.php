@@ -4,7 +4,7 @@
         <li>
           <h3>Primary Pages</h3>
         </li>
-        <li><a href="<?php echo home_url();?>">Home</a></li>
+        <li><a href="<?php echo home_url(); ?>">Home</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/contact">Conatact</a></li>
       </ul>
@@ -29,15 +29,15 @@
 
       <ul class="social">
         <li>
-          <a href="https://www.linkedin.com/in/abdullah-parvez-2b80a31a0"><img width="64px" src="<?php echo get_template_directory_uri() ;?>/static/lin.png"
+          <a href="https://www.linkedin.com/in/abdullah-parvez-2b80a31a0"><img width="64px" src="<?php echo get_template_directory_uri(); ?>/static/lin.png"
               class="icon" /></a>
         </li>
         <li>
           <a href="https://www.facebook.com/profile.php?id=100086518425003&mibextid=ZbWKwL"><img width="64px"
-              src="<?php echo get_template_directory_uri() ;?>/static/fb.png" class="icon" /></a>
+              src="<?php echo get_template_directory_uri(); ?>/static/fb.png" class="icon" /></a>
         </li>
         <li>
-          <a href="https://instagram.com/amazemfgco?igshid=MzNlNGNkZWQ4Mg=="><img width="64px" src="<?php echo get_template_directory_uri() ;?>/static/insta.png"
+          <a href="https://instagram.com/amazemfgco?igshid=MzNlNGNkZWQ4Mg=="><img width="64px" src="<?php echo get_template_directory_uri(); ?>/static/insta.png"
               class="icon" /></a>
         </li>
       </ul>
