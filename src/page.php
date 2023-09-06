@@ -1,21 +1,51 @@
-<?php get_header();?>
+<?php get_header();
+
+
+// Get Slider Images
+
+$image_array = array();
+if (have_rows('product_slider')) {
+  while (have_rows('product_slider')) {
+    the_row();
+    $image_array[] = array(
+      'slide_1' => get_sub_field('slide_1'),
+      'slide_2' => get_sub_field('slide_2'),
+      'slide_3' => get_sub_field('slide_3'),
+      'slide_4' => get_sub_field('slide_4'),
+    );
+  }
+}
+
+// Get the about text
+$about_text = get_field('about_text_short');
+$about_link = get_field('about_link');
+
+
+?>
   <section class="slider-main p0">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
       </ol>
       <div class="carousel-inner">
+      <?php foreach ($image_array as $images) { ?>
         <div class="carousel-item active">
-          <img src="<?php echo get_template_directory_uri() ;?>/static/1.jpg" class="d-block w-100" alt="..." />
+          <img src="<?php echo $images['slide_1']; ?>" class="d-block w-100" alt="..." />
         </div>
         <div class="carousel-item">
-          <img src="<?php echo get_template_directory_uri() ;?>/static/2.jpg" class="d-block w-100" alt="..." />
+          <img src="<?php echo $images['slide_2']; ?>" class="d-block w-100" alt="..." />
         </div>
         <div class="carousel-item">
-          <img src="<?php echo get_template_directory_uri() ;?>/static/3.jpg" class="d-block w-100" alt="..." />
+          <img src="<?php echo $images['slide_3']; ?>" class="d-block w-100" alt="..." />
         </div>
+        <div class="carousel-item">
+            <img src="<?php echo $images['slide_4']; ?>" class="d-block w-100" alt="..." />
+        </div>
+
+        <?php } ?>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -36,22 +66,11 @@
     <div class="container">
       <div class="wrapper text-center:md">
         <p>
-          "we are amaze manufacturing company, a different style, metal
-          handicrafts manufacturers and exporters copper,brass & stainless
-          steel – bathtubs, kitchen & bathroom sinks, bar sinks, commercial
-          sinks, counter tops,hoods, swings chairs, rain chains, house gate,
-          windos, urinals basins, and shower tarys etc. we are located in
-          moradabad city which is world famous for its brass work. our company
-          has been established in 2016, amaze mfg. co. has the vast experience
-          and talented team to handle any challenging jobs in handicrafts
-          sector. being a well-established company we have full in house
-          production facility and capability to handle any customized
-          development or oem at customer demand in any metal like copper,
-          brass, aluminum, iron, ss etc."
+          <?php echo $about_text;?>
         </p>
       </div>
       <center>
-        <button class="btn btn-brown">Learn More.</button>
+        <a href="<?php echo $about_link?>" class="btn btn-brown">Learn More.</a>
       </center>
     </div>
   </section>

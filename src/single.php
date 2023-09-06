@@ -40,6 +40,7 @@
           <img class="carousel__indicator" src="<?php echo get_template_directory_uri() ;?>/static/5.jpg" />
           <img class="carousel__indicator" src="<?php echo get_template_directory_uri() ;?>/static/6.jpg" />
           <img class="carousel__indicator" src="<?php echo get_template_directory_uri() ;?>/static/7.jpg" />
+
         </div>
 
       </div>

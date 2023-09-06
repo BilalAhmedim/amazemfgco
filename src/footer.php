@@ -5,17 +5,17 @@
           <h3>Primary Pages</h3>
         </li>
         <li><a href="<?php echo home_url();?>">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Conatact</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Conatact</a></li>
       </ul>
 
       <ul>
-        <li>
-          <h3>Featured Products</h3>
-        </li>
-        <li><a href="#">Baths</a></li>
-        <li><a href="#">Sinks</a></li>
-        <li><a href="#">Hoods</a></li>
+        <li><h3>Featured Products</h3>
+      </li>
+          <li><a href="copper-bathstubs">Copper Bathstubs</a></li>
+          <li><a href="ss-bathtubs">SS Bathstubs</a></li>
+          <li><a href="copper-kitchen-sinks">Copper Kitchen Sinks</a></li>
+          <li><a href="basin">Basin</a></li>
       </ul>
 
       <ul>
