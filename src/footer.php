@@ -40,6 +40,10 @@
           <a href="https://instagram.com/amazemfgco?igshid=MzNlNGNkZWQ4Mg=="><img width="64px" src="<?php echo get_template_directory_uri(); ?>/static/insta.png"
               class="icon" /></a>
         </li>
+        <li>
+          <a href="https://instagram.com/amazemfgco?igshid=MzNlNGNkZWQ4Mg=="><img width="64px" src="<?php echo get_template_directory_uri(); ?>/static/insta.png"
+              class="icon" /></a>
+        </li>
       </ul>
     </div>
   </footer>

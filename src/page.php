@@ -83,33 +83,28 @@ if (is_front_page()) {
     </header>
 
     <div class="gallery-inner">
-      <figure class="gallery-card">
-        <a href="./gallery.html">
-          <img src="<?php echo get_template_directory_uri(); ?>/static/image.jpg" alt="" />
-          <figcaption>Product N</figcaption>
-        </a>
-      </figure>
+      <?php
+$featured_products = array(
+    'Copper Bathtub',
+    'Stainless Steel Bathtubs',
+    'Copper Kitchen Sink',
+    'Copper Counter Top Sink',
+  );
 
+  for ($x = 0; $x < count($featured_products); $x++) {
+    ?>
       <figure class="gallery-card">
         <a href="./gallery.html">
-          <img src="<?php echo get_template_directory_uri(); ?>/static/image.jpg" alt="" />
-          <figcaption>Product N</figcaption>
+          <img src="<?php echo get_template_directory_uri() . "/static/" . $featured_products[$x] . ".jpg"; ?>" alt="
+          <?php echo $featured_products[$x]; ?>" />
+          <figcaption>
+            <?php echo $featured_products[$x]; ?>
+          </figcaption>
         </a>
       </figure>
-
-      <figure class="gallery-card">
-        <a href="./gallery.html">
-          <img src="<?php echo get_template_directory_uri(); ?>/static/image.jpg" alt="" />
-          <figcaption>Product N</figcaption>
-        </a>
-      </figure>
-
-      <figure class="gallery-card">
-        <a href="./gallery.html">
-          <img src="<?php echo get_template_directory_uri(); ?>/static/image.jpg" alt="" />
-          <figcaption>Product N</figcaption>
-        </a>
-      </figure>
+      <?php
+}
+  ?>
     </div>
   </div>
 </section>
@@ -195,6 +190,9 @@ if (is_front_page()) {
   </div>
 </section>
 
+
+
+
 <?php }
 // about us page content
 else if (is_page('About')) {
@@ -219,44 +217,44 @@ while (have_posts()) {
 // contact page content
 else if (is_page('Contact')) {
   ?>
-  <section class="contact">
-    <div class="container">
-      <header class="header">
-        <h1>Contact Us</h1>
-      </header>
+<section class="contact">
+  <div class="container">
+    <header class="header">
+      <h1>Contact Us</h1>
+    </header>
 
-      <div class="contact-us">
+    <div class="contact-us">
 
-        <div class="map-container">
-          <iframe class="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d734.9148144722428!2d78.74351737624923!3d28.813135224547228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390afda472a2a7c7%3A0xe2d4985830964c6!2sAmaze%20Mfg.%20Co.!5e0!3m2!1sen!2sin!4v1693253594745!5m2!1sen!2sin"
-            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
+      <div class="map-container">
+        <iframe class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d734.9148144722428!2d78.74351737624923!3d28.813135224547228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390afda472a2a7c7%3A0xe2d4985830964c6!2sAmaze%20Mfg.%20Co.!5e0!3m2!1sen!2sin!4v1693253594745!5m2!1sen!2sin"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
 
-        <div class="form">
-          <form action="#">
-            <fieldset>
-              <legend visible="true">Happy to hear from you</legend>
-              <label for="fname">First name:</label>
-              <input type="text" name="fname" id="fname" autocomplete="on">
-              <label for="lname">Last name:</label>
-              <input type="text" name="lname" id="lname" autocomplete="on">
-              <label for="email">Email:</label>
-              <input type="email" name="email" id="email" autocomplete="on">
-              <label for="msg">Massage:</label>
-              <textarea name="msg" id="msg" autocomplete="on"></textarea>
-              <input type="submit" value="Submit">
-            </fieldset>
-          </form>
-        </div>
-
+      <div class="form">
+        <form action="#">
+          <fieldset>
+            <legend visible="true">Happy to hear from you</legend>
+            <label for="fname">First name:</label>
+            <input type="text" name="fname" id="fname" autocomplete="on">
+            <label for="lname">Last name:</label>
+            <input type="text" name="lname" id="lname" autocomplete="on">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" autocomplete="on">
+            <label for="msg">Massage:</label>
+            <textarea name="msg" id="msg" autocomplete="on"></textarea>
+            <input type="submit" value="Submit">
+          </fieldset>
+        </form>
       </div>
 
     </div>
 
-  </section>
-  <?php
+  </div>
+
+</section>
+<?php
 
 } else if (is_page()) {
 }

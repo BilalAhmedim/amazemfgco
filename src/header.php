@@ -45,6 +45,7 @@
           <li><a class="active" href="<?php echo home_url(); ?>">Home</a></li>
           <li><a href="copper-bathstubs">Copper Bathstubs</a></li>
           <li><a href="ss-bathtubs">SS Bathstubs</a></li>
+          <li><a href="ss-sinks">SS Sinks</a></li>
           <li><a href="copper-kitchen-sinks">Copper Kitchen Sinks</a></li>
           <li><a href="basin">Basin</a></li>
           <li>
@@ -57,6 +58,7 @@
               <li><a href="/hoods/product">Product 1</a></li>
             </ul>
           </li>
+          <li><a href="company-profile">company Profile</a></li>
           <li><a href="about">About</a></li>
           <li><a href="contact">Contact</a></li>
         </ul>
