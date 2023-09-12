@@ -43,24 +43,30 @@
       <nav class="nav-nav">
         <ul class="main-menu clearfix">
           <li><a class="active" href="<?php echo home_url(); ?>">Home</a></li>
-          <li><a href="copper-bathstubs">Copper Bathstubs</a></li>
-          <li><a href="ss-bathtubs">SS Bathstubs</a></li>
-          <li><a href="ss-sinks">SS Sinks</a></li>
-          <li><a href="copper-kitchen-sinks">Copper Kitchen Sinks</a></li>
-          <li><a href="basin">Basin</a></li>
+          <li><a href="<?php echo home_url() . '/copper-bathtubs?product=copper-bathtubs'; ?>">Copper Bathstubs</a></li>
+          <li><a href="<?php echo home_url() . '/stainless-steel-bathtubs?product=stainless-steel-bathtubs'; ?>">SS Bathstubs</a></li>
+          <li><a href="<?php echo home_url() . '/copper-kitchen-sinks?product=copper-kitchen-sinks'; ?>">Copper Kitchen Sinks</a></li>
+          <li><a href="<?php echo home_url() . '/stainless-steel-sinks?product=stainless-steel-sinks'; ?>">SS Sinks</a></li>
+          <li><a href="<?php echo home_url() . '/basin?product=basin'; ?>">Basin</a></li>
           <li>
-            <a href="javascript:void(0)" class="has-submenu">Others<i class="arrow down"></i></a>
+            <a href="javascript:void(0)" class="has-submenu">Products<i class="arrow down"></i></a>
             <ul class="sub-menu">
-              <li><a href="/hoods/product">Product 1</a></li>
-              <li><a href="/hoods/product">Product 1</a></li>
-              <li><a href="/hoods/product">Product 1</a></li>
-              <li><a href="/hoods/product">Product 1</a></li>
-              <li><a href="/hoods/product">Product 1</a></li>
+              <li><a href="<?php echo home_url() . '/bar-wares?product=bar-wares'; ?>">bar-wares</a></li>
+              <li><a href="<?php echo home_url() . '/basin?product=basin'; ?>">basin</a></li>
+              <li><a href="<?php echo home_url() . '/bathwares?product=bathwares'; ?>">bathwares</a></li>
+              <li><a href="<?php echo home_url() . '/drink-wares?product=drink-wares'; ?>">drink-wares</a></li>
+              <li><a href="<?php echo home_url() . '/enps-wares?product=enps-wares'; ?>">enps-wares</a></li>
+              <li><a href="<?php echo home_url() . '/furniture?product=furniture'; ?>">furniture</a></li>
+              <li><a href="<?php echo home_url() . '/garden-wares?product=garden-wares'; ?>">garden-wares</a></li>
+              <li><a href="<?php echo home_url() . '/home-decor?product=home-decor'; ?>">home-decor</a></li>
+              <li><a href="<?php echo home_url() . '/house-hold-items?product=house-hold-items'; ?>">house-hold-items</a></li>
+              <li><a href="<?php echo home_url() . '/kitchen-wares?product=kitchen-wares'; ?>">kitchen-wares</a></li>
+              <li><a href="<?php echo home_url() . '/sanitary-wares?product=sanitary-wares'; ?>">sanitary-wares</a></li>
             </ul>
           </li>
-          <li><a href="company-profile">company Profile</a></li>
-          <li><a href="about">About</a></li>
-          <li><a href="contact">Contact</a></li>
+          <li><a href="<?php echo home_url() . '/company-profile'; ?>">company Profile</a></li>
+          <li><a href="<?php echo home_url() . '/about'; ?>">About</a></li>
+          <li><a href="<?php echo home_url() . '/contact'; ?>">Contact</a></li>
         </ul>
         <a class="contact-link hide-md" href="mailto:info@amazemfgco.com">info@amazemfgco.com</a>
       </nav>

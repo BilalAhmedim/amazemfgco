@@ -1,4 +1,15 @@
-<?php get_header();?>
+<?php get_header();
+$product_image_1 = get_field('product-image-1');
+$product_image_2 = get_field('product-image-2');
+$product_image_3 = get_field('product-image-3');
+$product_image_4 = get_field('product-image-4');
+$product_name = get_field('product_name');
+$product_item = get_field('item_no');
+$prdocts_finish = get_field('finish');
+$product_material = get_field('material');
+$product_size = get_field('size');
+$product_finishes_availability = get_field('finishes_availability');
+?>
 
 <div class="gallery-details">
     <header class="header">

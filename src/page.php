@@ -256,7 +256,28 @@ else if (is_page('Contact')) {
 </section>
 <?php
 
-} else if (is_page()) {
+} else {
+
+  $args = array(
+    'post_type' => 'post',
+    'posts_per_page' => -1,
+    'category_name' => $_GET['product'],
+  );
+  $query = new WP_Query($args);
+
+  $count = 1;
+  while ($query->have_posts()) {
+    $query->the_post();
+    the_title(); // Example: Display the post title
+    the_content(); // Example: Display the post content
+    the_permalink();
+    $image = get_field('product-image-2');
+
+    echo $image;
+
+    $count++;
+  }
+  wp_reset_query();
 }
 ?>
 
