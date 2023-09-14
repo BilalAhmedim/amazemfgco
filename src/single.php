@@ -9,6 +9,7 @@ $prdocts_finish = get_field('finish');
 $product_material = get_field('material');
 $product_size = get_field('size');
 $product_finishes_availability = get_field('finishes_availability');
+$product_tags = get_field('tags');
 ?>
 
 <div class="gallery-details">
@@ -23,16 +24,16 @@ $product_finishes_availability = get_field('finishes_availability');
 
           <ul class="carousel__track">
             <li class="carousel-slide current-slide">
-              <div class="carousel__images" data-image-src="<?php echo get_template_directory_uri(); ?>/static/1.jpg" alt="{{product.name}}"></div>
+              <div class="carousel__images" data-image-src="<?php echo $product_image_1; ?>" alt="{{product.name}}"></div>
             </li>
             <li class="carousel-slide">
-              <div class="carousel__images" data-image-src="<?php echo get_template_directory_uri(); ?>/static/5.jpg" alt="{{product.name}}"></div>
+              <div class="carousel__images" data-image-src="<?php echo $product_image_2; ?>" alt="{{product.name}}"></div>
             </li>
             <li class="carousel-slide">
-              <div class="carousel__images" data-image-src="<?php echo get_template_directory_uri(); ?>/static/6.jpg" alt="{{product.name}}"></div>
+              <div class="carousel__images" data-image-src="<?php echo $product_image_3; ?>" alt="{{product.name}}"></div>
             </li>
             <li class="carousel-slide">
-              <div class="carousel__images" data-image-src="<?php echo get_template_directory_uri(); ?>/static/7.jpg" alt="{{product.name}}"></div>
+              <div class="carousel__images" data-image-src="<?php echo $product_image_4; ?>" alt="{{product.name}}"></div>
             </li>
           </ul>
 
@@ -47,23 +48,23 @@ $product_finishes_availability = get_field('finishes_availability');
         </button>
 
         <div class="carousel__nav">
-          <img class="carousel__indicator current-slide" src="<?php echo get_template_directory_uri(); ?>/static/1.jpg" />
-          <img class="carousel__indicator" src="<?php echo get_template_directory_uri(); ?>/static/5.jpg" />
-          <img class="carousel__indicator" src="<?php echo get_template_directory_uri(); ?>/static/6.jpg" />
-          <img class="carousel__indicator" src="<?php echo get_template_directory_uri(); ?>/static/7.jpg" />
+          <img class="carousel__indicator current-slide" src="<?php echo $product_image_1; ?>" />
+          <img class="carousel__indicator" src="<?php echo $product_image_2; ?>" />
+          <img class="carousel__indicator" src="<?php echo $product_image_3; ?>" />
+          <img class="carousel__indicator" src="<?php echo $product_image_4; ?>" />
 
         </div>
 
       </div>
 
       <div class="slider-details">
-        <p>Product Name: 72” Brass Double Slipper Bath tub</p>
-        <p>Item Number : RA72DB-BL/PL</p>
-        <p>Finish: Black Outside / Polish Inside</p>
-        <p>Material : Brass 16 Gauge</p>
-        <p>Size: 72”L X 32”W X 31”H</p>
-        <p>Finishes Available: Antique, Mate, Polish, Others</p>
-        <p>Tags : Brass, Double Slipper, bath tub</p>
+        <p><b>Product Name:</b> <?php echo $product_name; ?></p>
+        <p><b>Item Number :</b><?php echo $product_item; ?></p>
+        <p><b>Finish: </b><?php echo $prdocts_finish; ?></p>
+        <p><b>Material : </b><?php echo $product_material; ?></p>
+        <p><b>Size: </b><?php echo $product_size; ?></p>
+        <p><b>Finishes Available: </b><?php echo $product_finishes_availability; ?></p>
+        <p><b>Tags : </b><?php echo $product_tags; ?></p>
       </div>
 
     </div>
