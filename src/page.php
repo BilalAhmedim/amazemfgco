@@ -24,18 +24,18 @@ if (is_front_page()) {
 
 
 <section class="slider-main p0">
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-          aria-label="Slide 4"></button>
-      </div>
-      <div class="carousel-inner">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
       <?php foreach ($image_array as $images) {?>
       <div class="carousel-item active">
         <img src="<?php echo $images['slide_1']; ?>" class="d-block w-100" alt="..." />
@@ -51,18 +51,18 @@ if (is_front_page()) {
       </div>
 
       <?php }?>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 </section>
 
 <section class="about p-t-0">
@@ -101,7 +101,7 @@ $featured_products = array(
     ?>
       <figure class="gallery-card">
         <a href="./gallery.html">
-          <img src="<?php echo get_template_directory_uri() . "/static/" . $featured_products[$x] . ".jpg"; ?>" alt="
+          <img src="<?php echo get_template_directory_uri() . " /static/" . $featured_products[$x] . ".jpg"; ?>" alt="
           <?php echo $featured_products[$x]; ?>" />
           <figcaption>
             <?php echo $featured_products[$x]; ?>
@@ -271,19 +271,41 @@ else if (is_page('Contact')) {
   );
   $query = new WP_Query($args);
 
-  $count = 1;
+  $count = 1;?>
+<section>
+  <div class="container">
+    <header class="header">
+      <h1>
+        <?php echo str_replace("-", " ", $_GET['product']); ?>
+      </h1>
+    </header>
+    <div class="gallery-inner">
+      <?php
+
   while ($query->have_posts()) {
     $query->the_post();
-    the_title(); // Example: Display the post title
-    the_content(); // Example: Display the post content
-    the_permalink();
-    $image = get_field('product-image-2');
-
-    echo $image;
-
-    $count++;
+    // getting acf fields with wp post loop
+    $product_image = get_field('product-image-1');
+    $product_name = get_field('product_name');
+    ?>
+      <figure class="gallery-card">
+        <a href="<?php echo the_permalink(); ?>">
+          <img src="<?php echo $product_image; ?>" alt="" />
+          <figcaption>
+            <?php echo $product_name; ?>
+          </figcaption>
+        </a>
+      </figure>
+      <?php
+$count++;
   }
   wp_reset_query();
+  ?>
+    </div>
+  </div>
+
+</section>
+<?php
 }
 ?>
 
