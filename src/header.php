@@ -17,7 +17,7 @@
 
 <body>
 <header class="navbar-light bg-light">
-    <a class="navbar-brand navbar-light bg-light d-flex justify-content-center" href="#">
+    <a class="navbar-brand navbar-light bg-light d-flex justify-content-center" href="<?php echo home_url(); ?>">
       <img src="<?php echo get_template_directory_uri(); ?>/static/logo.png" alt="" height="70">
     </a>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -52,8 +52,6 @@
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li class="nav-item"><a class="nav-link"
                     href="<?php echo home_url() . '/bar-wares?product=bar-wares'; ?>">Bar Wares</a></li>
-                <li class="nav-item"><a class="nav-link"
-                    href="<?php echo home_url() . '/basin?product=basin'; ?>">Basin</a></li>
                 <li class="nav-item"><a class="nav-link"
                     href="<?php echo home_url() . '/bathwares?product=bathwares'; ?>">Bathwares</a></li>
                 <li class="nav-item"><a class="nav-link"

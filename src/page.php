@@ -91,21 +91,21 @@ if (is_front_page()) {
     <div class="gallery-inner">
       <?php
 $featured_products = array(
-    'Copper Bathtub',
-    'Stainless Steel Bathtubs',
-    'Copper Kitchen Sink',
-    'Copper Counter Top Sink',
-    'Stainless Steel Kitchen Sinks',
+    array('Copper Bathtub', '/copper-bathtubs?product=copper-bathtubs'),
+    array('Stainless Steel Bathtubs', '/stainless-steel-bathtubs?product=stainless-steel-bathtubs'),
+    array('Copper Kitchen Sink', '/copper-kitchen-sinks?product=copper-kitchen-sinks'),
+    array('Copper Basin', '/basin?product=basin'),
+    array('Stainless Steel Kitchen Sinks', '/stainless-steel-sinks?product=stainless-steel-sinks'),
   );
 
   for ($x = 0; $x < count($featured_products); $x++) {
     ?>
       <figure class="gallery-card">
-        <a href="./gallery.html">
-          <img src="<?php echo get_template_directory_uri() . "/static/" . $featured_products[$x] . ".jpg"; ?>" alt="
-          <?php echo $featured_products[$x]; ?>" />
+        <a href="<?php echo $featured_products[$x][1]; ?>">
+          <img src="<?php echo get_template_directory_uri() . "/static/" . $featured_products[$x][0] . ".jpg"; ?>" alt="
+          <?php echo $featured_products[$x][0]; ?>" />
           <figcaption>
-            <?php echo $featured_products[$x]; ?>
+            <?php echo $featured_products[$x][0]; ?>
           </figcaption>
         </a>
       </figure>
@@ -119,80 +119,67 @@ $featured_products = array(
 <section class="gallery">
   <div class="container">
     <header class="header">
-      <h1>Copper Baths </h1>
+      <h1>Products</h1>
     </header>
 
     <div class="gallery-inner">
 
       <figure class="gallery-card">
-        <a href="./gallery.html">
-          <img src="<?php echo get_template_directory_uri(); ?>/static/image.jpg" alt="" />
-          <figcaption>Product N</figcaption>
+        <a href="/bar-wares?product=bar-wares">
+          <img src="<?php echo get_template_directory_uri(); ?>/static/amc-barware.jpg" alt="Bare Wares" />
+          <figcaption>Bare Wares</figcaption>
         </a>
       </figure>
 
       <figure class="gallery-card">
-        <a href="./gallery.html">
-          <img src="<?php echo get_template_directory_uri(); ?>/static/image.jpg" alt="" />
-          <figcaption>Product N</figcaption>
+        <a href="/drink-wares?product=drink-wares">
+          <img src="<?php echo get_template_directory_uri(); ?>/static/drinkware.jpg" alt="Drink Ware" />
+          <figcaption>Drink Ware</figcaption>
         </a>
       </figure>
 
       <figure class="gallery-card">
-        <a href="./gallery.html">
-          <img src="<?php echo get_template_directory_uri(); ?>/static/image.jpg" alt="" />
-          <figcaption>Product N</figcaption>
+        <a href="/enps-wares?product=enps-wares">
+          <img src="<?php echo get_template_directory_uri(); ?>/static/enps ware 1.jpg" alt="Electro Plated Nickel Silver(EPNS) Ware" />
+          <figcaption>EPNS. Wares</figcaption>
         </a>
       </figure>
 
       <figure class="gallery-card">
-        <a href="./gallery.html">
-          <img src="<?php echo get_template_directory_uri(); ?>/static/image.jpg" alt="" />
-          <figcaption>Product N</figcaption>
+        <a href="/furniture?product=furniture">
+          <img src="<?php echo get_template_directory_uri(); ?>/static/furniture.jpg" alt="furniture" />
+          <figcaption>Furniture</figcaption>
         </a>
       </figure>
 
       <figure class="gallery-card">
-        <a href="./gallery.html">
-          <img src="<?php echo get_template_directory_uri(); ?>/static/image.jpg" alt="" />
-          <figcaption>Product N</figcaption>
+        <a href="/garden-wares?product=garden-wares">
+          <img src="<?php echo get_template_directory_uri(); ?>/static/Gardenware.jpg" alt="Garden Wares" />
+          <figcaption>Garden Wares</figcaption>
         </a>
       </figure>
 
       <figure class="gallery-card">
-        <a href="./gallery.html">
-          <img src="<?php echo get_template_directory_uri(); ?>/static/image.jpg" alt="" />
-          <figcaption>Product N</figcaption>
+        <a href="/home-decor?product=home-decor">
+          <img src="<?php echo get_template_directory_uri(); ?>/static/home decor.jpg" alt="Home Decors" />
+          <figcaption>Home Decor</figcaption>
         </a>
       </figure>
 
       <figure class="gallery-card">
-        <a href="./gallery.html">
-          <img src="<?php echo get_template_directory_uri(); ?>/static/image.jpg" alt="" />
-          <figcaption>Product N</figcaption>
+        <a href="/kitchen-wares?product=kitchen-wares">
+          <img src="<?php echo get_template_directory_uri(); ?>/static/kitchenwares.jpg" alt="kitchen Wares" />
+          <figcaption>Kitchen Wares</figcaption>
         </a>
       </figure>
 
       <figure class="gallery-card">
-        <a href="./gallery.html">
-          <img src="<?php echo get_template_directory_uri(); ?>/static/image.jpg" alt="" />
-          <figcaption>Product N</figcaption>
+        <a href="/sanitary-wares?product=sanitary-wares">
+          <img src="<?php echo get_template_directory_uri(); ?>/static/Sanitryware.jpg" alt="Sanitry Ware" />
+          <figcaption>Sanitry Ware</figcaption>
         </a>
       </figure>
 
-      <figure class="gallery-card">
-        <a href="./gallery.html">
-          <img src="<?php echo get_template_directory_uri(); ?>/static/image.jpg" alt="" />
-          <figcaption>Product N</figcaption>
-        </a>
-      </figure>
-
-      <figure class="gallery-card">
-        <a href="./gallery.html">
-          <img src="<?php echo get_template_directory_uri(); ?>/static/image.jpg" alt="" />
-          <figcaption>Product N</figcaption>
-        </a>
-      </figure>
     </div>
   </div>
 </section>
@@ -257,6 +244,11 @@ else if (is_page('Contact')) {
       </div>
 
     </div>
+    <?php
+while (have_posts()) {
+    the_post();
+    the_content();
+  }?>
 
   </div>
 

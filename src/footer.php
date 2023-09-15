@@ -33,7 +33,6 @@
       </li>
       <li><a href="<?php echo home_url() . '/bar-wares?product=bar-wares'; ?>">Bar
           Wares</a></li>
-      <li><a href="<?php echo home_url() . '/basin?product=basin'; ?>">Basin</a></li>
       <li><a href="<?php echo home_url() . '/bathwares?product=bathwares'; ?>">Bathwares</a></li>
       <li><a href="<?php echo home_url() . '/drink-wares?product=drink-wares'; ?>">Drink Wares</a></li>
       <li><a href="<?php echo home_url() . '/enps-wares?product=enps-wares'; ?>">Enps
