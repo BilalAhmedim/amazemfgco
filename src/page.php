@@ -95,13 +95,14 @@ $featured_products = array(
     'Stainless Steel Bathtubs',
     'Copper Kitchen Sink',
     'Copper Counter Top Sink',
+    'Stainless Steel Kitchen Sinks',
   );
 
   for ($x = 0; $x < count($featured_products); $x++) {
     ?>
       <figure class="gallery-card">
         <a href="./gallery.html">
-          <img src="<?php echo get_template_directory_uri() . " /static/" . $featured_products[$x] . ".jpg"; ?>" alt="
+          <img src="<?php echo get_template_directory_uri() . "/static/" . $featured_products[$x] . ".jpg"; ?>" alt="
           <?php echo $featured_products[$x]; ?>" />
           <figcaption>
             <?php echo $featured_products[$x]; ?>
