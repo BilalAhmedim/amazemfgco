@@ -240,14 +240,14 @@
             {
                 "key": "field_64f762300b488",
                 "label": "Product Image 1",
-                "name": "Product Image 1",
+                "name": "product-image-1",
                 "aria-label": "",
                 "type": "image",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
-                    "width": "",
+                    "width": "25",
                     "class": "",
                     "id": ""
                 },
@@ -265,14 +265,14 @@
             {
                 "key": "field_64f7627e0b48a",
                 "label": "Product Image 2",
-                "name": "Product Image  2",
+                "name": "product-image-2",
                 "aria-label": "",
                 "type": "image",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
-                    "width": "",
+                    "width": "25",
                     "class": "",
                     "id": ""
                 },
@@ -290,7 +290,7 @@
             {
                 "key": "field_64f7628a0b48b",
                 "label": "Product Image 3",
-                "name": "Product Image 3",
+                "name": "product-image-3",
                 "aria-label": "",
                 "type": "image",
                 "instructions": "",
@@ -315,7 +315,7 @@
             {
                 "key": "field_64f7628c0b48c",
                 "label": "Product Image 4",
-                "name": "Product Image 4",
+                "name": "product-image-4",
                 "aria-label": "",
                 "type": "image",
                 "instructions": "",
@@ -441,6 +441,26 @@
                 "key": "field_64f7662e68eed",
                 "label": "Finishes Availability",
                 "name": "finishes_availability",
+                "aria-label": "",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_650360ec31e24",
+                "label": "Tags",
+                "name": "tags",
                 "aria-label": "",
                 "type": "text",
                 "instructions": "",

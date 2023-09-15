@@ -32,50 +32,50 @@
             <li class="nav-item"><a class="nav-link active" aria-current="page"
                 href="<?php echo home_url(); ?>">Home</a></li>
             <li class="nav-item"><a class="nav-link"
-                href="<?php echo home_url() . '/copper-bathtubs?product=copper-bathtubs'; ?>">Copper Bathstubs</a></li>
+                href="<?php echo home_url() . '/copper-bathtubs?product=copper-bathtubs'; ?>">Copper Bathtubs</a></li>
             <li class="nav-item"><a class="nav-link"
-                href="<?php echo home_url() . '/stainless-steel-bathtubs?product=stainless-steel-bathtubs'; ?>">SS
-                Bathstubs</a></li>
+                href="<?php echo home_url() . '/stainless-steel-bathtubs?product=stainless-steel-bathtubs'; ?>">S-Steel
+                Bathtubs</a></li>
             <li class="nav-item"><a class="nav-link"
                 href="<?php echo home_url() . '/copper-kitchen-sinks?product=copper-kitchen-sinks'; ?>">Copper Kitchen
                 Sinks</a></li>
             <li class="nav-item"><a class="nav-link"
-                href="<?php echo home_url() . '/stainless-steel-sinks?product=stainless-steel-sinks'; ?>">SS Sinks</a>
+                href="<?php echo home_url() . '/stainless-steel-sinks?product=stainless-steel-sinks'; ?>">S-Steel Sinks</a>
             </li>
             <li class="nav-item"><a class="nav-link" href="<?php echo home_url() . '/basin?product=basin'; ?>">Basin</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
-                Products
+                Other Products
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li class="nav-item"><a class="nav-link"
-                    href="<?php echo home_url() . '/bar-wares?product=bar-wares'; ?>">bar-wares</a></li>
+                    href="<?php echo home_url() . '/bar-wares?product=bar-wares'; ?>">Bar Wares</a></li>
                 <li class="nav-item"><a class="nav-link"
-                    href="<?php echo home_url() . '/basin?product=basin'; ?>">basin</a></li>
+                    href="<?php echo home_url() . '/basin?product=basin'; ?>">Basin</a></li>
                 <li class="nav-item"><a class="nav-link"
-                    href="<?php echo home_url() . '/bathwares?product=bathwares'; ?>">bathwares</a></li>
+                    href="<?php echo home_url() . '/bathwares?product=bathwares'; ?>">Bathwares</a></li>
                 <li class="nav-item"><a class="nav-link"
-                    href="<?php echo home_url() . '/drink-wares?product=drink-wares'; ?>">drink-wares</a></li>
+                    href="<?php echo home_url() . '/drink-wares?product=drink-wares'; ?>">Drink Wares</a></li>
                 <li class="nav-item"><a class="nav-link"
-                    href="<?php echo home_url() . '/enps-wares?product=enps-wares'; ?>">enps-wares</a></li>
+                    href="<?php echo home_url() . '/enps-wares?product=enps-wares'; ?>">Enps Wares</a></li>
                 <li class="nav-item"><a class="nav-link"
-                    href="<?php echo home_url() . '/furniture?product=furniture'; ?>">furniture</a></li>
+                    href="<?php echo home_url() . '/furniture?product=furniture'; ?>">Furniture</a></li>
                 <li class="nav-item"><a class="nav-link"
-                    href="<?php echo home_url() . '/garden-wares?product=garden-wares'; ?>">garden-wares</a></li>
+                    href="<?php echo home_url() . '/garden-wares?product=garden-wares'; ?>">Garden Wares</a></li>
                 <li class="nav-item"><a class="nav-link"
-                    href="<?php echo home_url() . '/home-decor?product=home-decor'; ?>">home-decor</a></li>
+                    href="<?php echo home_url() . '/home-decor?product=home-decor'; ?>">Home Decor</a></li>
                 <li class="nav-item"><a class="nav-link"
-                    href="<?php echo home_url() . '/house-hold-items?product=house-hold-items'; ?>">house-hold-items</a>
+                    href="<?php echo home_url() . '/house-hold-items?product=house-hold-items'; ?>">House Hold Items</a>
                 </li>
                 <li class="nav-item"><a class="nav-link"
-                    href="<?php echo home_url() . '/kitchen-wares?product=kitchen-wares'; ?>">kitchen-wares</a></li>
+                    href="<?php echo home_url() . '/kitchen-wares?product=kitchen-wares'; ?>">Kitchen Wares</a></li>
                 <li class="nav-item"><a class="nav-link"
-                    href="<?php echo home_url() . '/sanitary-wares?product=sanitary-wares'; ?>">sanitary-wares</a></li>
+                    href="<?php echo home_url() . '/sanitary-wares?product=sanitary-wares'; ?>">Sanitary Wares</a></li>
               </ul>
             </li>
-            <li class="nav-item"><a class="nav-link" href="<?php echo home_url() . '/company-profile'; ?>">company
+            <li class="nav-item"><a class="nav-link" href="<?php echo home_url() . '/company-profile'; ?>">Company
                 Profile</a></li>
             <li class="nav-item"><a class="nav-link" href="<?php echo home_url() . '/about'; ?>">About</a></li>
             <li class="nav-item"><a class="nav-link" href="<?php echo home_url() . '/contact'; ?>">Contact</a></li>
