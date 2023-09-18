@@ -279,21 +279,26 @@ while (have_posts()) {
     $query->the_post();
     // getting acf fields with wp post loop
     $product_image = get_field('product-image-1');
+    $product_image_size = $product_image['sizes']['medium'];
     $product_name = get_field('product_name');
+
     // getting post id
     $post_id = get_the_ID();
     // . '/p_id=' . $post_id;
+
     ?>
       <figure class="gallery-card">
-        <a href="<?php echo the_permalink(); ?>">
-          <img src="<?php echo $product_image; ?>" alt="" />
+        <a href="<?php the_permalink();?>">
+          <img src="<?php echo $product_image_size; ?>" alt="<?php echo esc_attr($product_name); ?>" />
           <figcaption>
-            <?php echo $product_name; ?>
+            <?php echo esc_html($product_name); ?>
           </figcaption>
         </a>
       </figure>
+
       <?php
-$count++;
+var_dumb($product_image);
+    $count++;
   }
   wp_reset_query();
   ?>

@@ -1,8 +1,16 @@
 <?php get_header();
 $product_image_1 = get_field('product-image-1');
+$product_image_1_size = $product_image_1['sizes']['large'];
+
 $product_image_2 = get_field('product-image-2');
+$product_image_2_size = $product_image_2['sizes']['large'];
+
 $product_image_3 = get_field('product-image-3');
+$product_image_3_size = $product_image_3['sizes']['large'];
+
 $product_image_4 = get_field('product-image-4');
+$product_image_4_size = $product_image_4['sizes']['large'];
+
 $product_name = get_field('product_name');
 $product_item = get_field('item_no');
 $prdocts_finish = get_field('finish');
@@ -24,16 +32,16 @@ $product_tags = get_field('tags');
 
           <ul class="carousel__track">
             <li class="carousel-slide current-slide">
-              <div class="carousel__images" data-image-src="<?php echo $product_image_1; ?>" alt="{{product.name}}"></div>
+              <div class="carousel__images" data-image-src="<?php echo $product_image_1_size; ?>" alt="<?php echo $product_name; ?>"></div>
             </li>
             <li class="carousel-slide">
-              <div class="carousel__images" data-image-src="<?php echo $product_image_2; ?>" alt="{{product.name}}"></div>
+              <div class="carousel__images" data-image-src="<?php echo $product_image_2_size; ?>" alt="<?php echo $product_name; ?>"></div>
             </li>
             <li class="carousel-slide">
-              <div class="carousel__images" data-image-src="<?php echo $product_image_3; ?>" alt="{{product.name}}"></div>
+              <div class="carousel__images" data-image-src="<?php echo $product_image_3_size; ?>" alt="<?php echo $product_name; ?>"></div>
             </li>
             <li class="carousel-slide">
-              <div class="carousel__images" data-image-src="<?php echo $product_image_4; ?>" alt="{{product.name}}"></div>
+              <div class="carousel__images" data-image-src="<?php echo $product_image_4_size; ?>" alt="<?php echo $product_name; ?>"></div>
             </li>
           </ul>
 
@@ -48,10 +56,10 @@ $product_tags = get_field('tags');
         </button>
 
         <div class="carousel__nav">
-          <img class="carousel__indicator current-slide" src="<?php echo $product_image_1; ?>" />
-          <img class="carousel__indicator" src="<?php echo $product_image_2; ?>" />
-          <img class="carousel__indicator" src="<?php echo $product_image_3; ?>" />
-          <img class="carousel__indicator" src="<?php echo $product_image_4; ?>" />
+          <img class="carousel__indicator current-slide" src="<?php echo $product_image_1_size; ?>" />
+          <img class="carousel__indicator" src="<?php echo $product_image_2_size; ?>" />
+          <img class="carousel__indicator" src="<?php echo $product_image_3_size; ?>" />
+          <img class="carousel__indicator" src="<?php echo $product_image_4_size; ?>" />
 
         </div>
 
@@ -70,5 +78,7 @@ $product_tags = get_field('tags');
     </div>
   </div>
 
-
+<?php
+print_r($product_image)
+;?>
     <?php get_footer();?>
