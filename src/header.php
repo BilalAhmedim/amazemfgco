@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes();?>>
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <?php wp_head();?>
-  <title>Home - Amaze Manufacturing Company</title>
+  <?php wp_head();
+$pages = $_GET['product'];
+?>
   <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/static/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/static/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri(); ?>/static/favicon/favicon-16x16.png">
@@ -13,9 +14,13 @@
   <link rel="mask-icon" href="<?php echo get_template_directory_uri(); ?>/static/favicon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+
+  <!-- <link rel="canonical" href="<?php echo home_url() . '' . $pages . '?product=' . $pages; ?>"> -->
+  <meta name="keywords" content="Copper, Brass, steel, stainless steel, wood, antique, polished, matte, farmhouse sinks, Bath, tubs, bathtubs, sinks, kitchen sinks">
+
 </head>
 
-<body>
+<body <?php echo body_class(); ?> oncontextmenu="return false">
 <header class="navbar-light bg-light">
     <a class="navbar-brand navbar-light bg-light d-flex justify-content-center" href="<?php echo home_url(); ?>">
       <img src="<?php echo get_template_directory_uri(); ?>/static/logo.png" alt="" height="70">

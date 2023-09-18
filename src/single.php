@@ -18,6 +18,17 @@ $product_material = get_field('material');
 $product_size = get_field('size');
 $product_finishes_availability = get_field('finishes_availability');
 $product_tags = get_field('tags');
+
+// getting category form using it as back button
+$categories = get_the_category();
+
+if (!empty($categories) && is_array($categories)) {
+  $firstCategory = reset($categories); // Get the first category object
+  if (is_object($firstCategory) && isset($firstCategory->slug)) {
+    $back = $firstCategory->slug;
+    $back;
+  }
+}
 ?>
 
 <div class="gallery-details">
@@ -27,6 +38,7 @@ $product_tags = get_field('tags');
 
     <div class="slider container">
       <div class="slider__carousel">
+        <span class="goback"><a href='<?php echo home_url(); ?>'>Home</a> / <a href='<?php echo home_url() . '/' . $back . '?product=' . $back; ?>'><?php echo ucwords(str_replace("-", " ", $back)); ?></a></span>
 
         <div class="carousel__track-container">
 
@@ -66,19 +78,16 @@ $product_tags = get_field('tags');
       </div>
 
       <div class="slider-details">
-        <p><b>Product Name:</b> <?php echo $product_name; ?></p>
-        <p><b>Item Number :</b><?php echo $product_item; ?></p>
-        <p><b>Finish: </b><?php echo $prdocts_finish; ?></p>
-        <p><b>Material : </b><?php echo $product_material; ?></p>
-        <p><b>Size: </b><?php echo $product_size; ?></p>
-        <p><b>Finishes Available: </b><?php echo $product_finishes_availability; ?></p>
-        <p><b>Tags : </b><?php echo $product_tags; ?></p>
+        <p><b>Product Name:</b> <?php echo esc_html($product_name); ?></p>
+        <p><b>Item Number :</b><?php echo esc_html($product_item); ?></p>
+        <p><b>Finish: </b><?php echo esc_html($prdocts_finish); ?></p>
+        <p><b>Material : </b><?php echo esc_html($product_material); ?></p>
+        <p><b>Size: </b><?php echo esc_html($product_size); ?></p>
+        <p><b>Finishes Available: </b><?php echo esc_html($product_finishes_availability); ?></p>
+        <p><b>Tags : </b><?php echo esc_html($product_tags); ?></p>
       </div>
 
     </div>
   </div>
 
-<?php
-print_r($product_image)
-;?>
     <?php get_footer();?>

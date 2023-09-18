@@ -14,3 +14,9 @@ function enqueue_theme_scripts() {
   }
 }
 add_action('wp_enqueue_scripts', 'enqueue_theme_scripts');
+
+function ThemeSupport() {
+  add_theme_support('title-tag');
+}
+
+add_action('after_setup_theme', 'ThemeSupport');

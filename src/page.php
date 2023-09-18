@@ -286,7 +286,7 @@ while (have_posts()) {
     $post_id = get_the_ID();
     // . '/p_id=' . $post_id;
 
-    ?>
+    ;?>
       <figure class="gallery-card">
         <a href="<?php the_permalink();?>">
           <img src="<?php echo $product_image_size; ?>" alt="<?php echo esc_attr($product_name); ?>" />
@@ -297,8 +297,7 @@ while (have_posts()) {
       </figure>
 
       <?php
-var_dumb($product_image);
-    $count++;
+$count++;
   }
   wp_reset_query();
   ?>
