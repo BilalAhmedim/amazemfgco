@@ -227,34 +227,39 @@ else if (is_page('Contact')) {
       </div>
 
       <div class="form">
-        <form action="#">
-          <fieldset>
-            <legend visible="true">Happy to hear from you</legend>
-            <label for="fname">First name:</label>
-            <input type="text" name="fname" id="fname" autocomplete="on">
-            <label for="lname">Last name:</label>
-            <input type="text" name="lname" id="lname" autocomplete="on">
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" autocomplete="on">
-            <label for="msg">Massage:</label>
-            <textarea name="msg" id="msg" autocomplete="on"></textarea>
-            <input type="submit" value="Submit">
-          </fieldset>
-        </form>
-      </div>
-
-    </div>
-    <?php
+      <?php
 while (have_posts()) {
     the_post();
     the_content();
   }?>
+      </div>
+
+    </div>
 
   </div>
 
 </section>
 <?php
 
+} else if (is_page('company-profile')) {
+  ?>
+  <section class="about">
+  <header class="header">
+    <h1>Company Profile</h1>
+  </header>
+
+  <div class="container">
+    <div class="wrapper text-center:md">
+      <?php
+while (have_posts()) {
+    the_post();
+    the_content();
+  }?>
+    </div>
+  </div>
+</section>
+
+  <?php
 } else {
 
   $args = array(
