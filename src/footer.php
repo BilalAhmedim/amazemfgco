@@ -61,8 +61,8 @@
             src="<?php echo get_template_directory_uri(); ?>/static/insta.png" class="icon" /></a>
       </li>
       <li>
-        <a href="https://instagram.com/amazemfgco?igshid=MzNlNGNkZWQ4Mg=="><img width="64px"
-            src="<?php echo get_template_directory_uri(); ?>/static/insta.png" class="icon" /></a>
+        <a href="https://www.pinterest.com/amazemfgco/?invite_code=9a4647b3af6c422a8d1f971682a393bf&sender=1088393572354453968"><img width="64px"
+            src="<?php echo get_template_directory_uri(); ?>/static/pin.png" class="icon" /></a>
       </li>
     </ul>
   </div>
