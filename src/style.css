@@ -1,7 +1,12 @@
 /*
-ThemeName: Dynamic Site
-Author: Bilal Ahmed
+Theme Name: AMC Theme
+Author: Abdullah Parvez
+Description: AMC Website.
+Requires at least: 5.3
+Tested up to: 6.3
+Requires PHP: 5.6
 Version: 1.1
+Text Domain: amazemfgco.com
 */
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400&family=Julius+Sans+One&display=swap"); /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
