@@ -21,7 +21,7 @@
           Bathtubs</a></li>
       <li><a href="<?php echo home_url() . '/copper-kitchen-sinks?product=copper-kitchen-sinks'; ?>">Copper Kitchen
           Sinks</a></li>
-      <li><a href="<?php echo home_url() . '/stainless-steel-sinks?product=stainless-steel-sinks'; ?>">Stainless
+      <li><a href="<?php echo home_url() . '/stainless-steel-sinks?product=stainless-steel-sinks'; ?>">Stainless Steel
           Sinks</a>
       </li>
       <li><a href="<?php echo home_url() . '/basin?product=basin'; ?>">Basin</a>
